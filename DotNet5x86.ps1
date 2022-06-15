@@ -1,5 +1,5 @@
 ###### Vars#####
-# powershell -command "iex ((New-Object System.Net.WebClient).DownloadString('ps1'))" 
+# powershell -command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/bubbafre/It-Scripts/main/DotNet5x86.ps1'))" 
 $URL = "https://download.visualstudio.microsoft.com/download/pr/4a79fcd5-d61b-4606-8496-68071c8099c6/2bf770ca40521e8c4563072592eadd06/dotnet-runtime-5.0.13-win-x86.exe"
 $OutputURL = "C:\temp\dotnet-runtime-5.0.13-win-x86.exe"
 
