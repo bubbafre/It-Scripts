@@ -21,3 +21,4 @@ Start-Process -NoNewWindow -FilePath "C:\temp\dotnet-runtime-5.0.13-win-x86.exe"
 } else { Write-host $software already installed }
 
 
+$installed
