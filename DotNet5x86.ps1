@@ -12,8 +12,12 @@ $installed = (Get-ItemProperty HKLM:\SOFTWARE\Classes\Installer\Products\* | Whe
 If(-Not $installed) {
     Write-Host "'$software' NOT is installed."
     Write-host "Starting Dotnet-runtime x86 installation"
+    Invoke-WebRequest -Uri "$URL" -OutFile "$outputURL"
+
 ##Starting Install
 Write-host Starting $software installation
 Start-Process -NoNewWindow -FilePath "C:\temp\dotnet-runtime-5.0.13-win-x86.exe" -ArgumentList "/install /quiet /norestart"
 
 } else { Write-host $software already installed }
+
+
